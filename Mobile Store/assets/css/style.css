@@ -1,0 +1,814 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Project Name
+Version:    1.0
+Last change:24/03/17 [fixed Float bug, vf]
+Author Name:Tawhidul Alam
+Primary use:
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Table of contents]
+1. Body
+2. Header-top
+2. Navbar
+-------------------------------------------------------------------*/
+/*
+==========================================
+    Reset Css
+==========================================
+*/
+/*Roboto Condensed*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+/*Roboto Condensed*/
+/*Roboto Condensed*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+/*Roboto Condensed*/
+:root {
+    --primary: #fc721e;
+    --dark: #0b0b0b;
+    --body: #000;
+    --box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
+    --white: #f5f3f3;
+}
+:root {
+  --animate-duration: 1000ms;
+  --animate-delay: 0.5s;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: var(--body);
+    font-size: 14px;
+    line-height: 1.8;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+ul li {
+    list-style: none;
+    font-family: font-family: 'Oswald', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-4,
+ul {
+    margin: 0;
+    padding: 0;
+    color: var(--dark);
+}
+h1,
+h2{
+    color: #ff5200;
+}
+a,
+a:hover {
+    text-decoration: none;
+}
+a{
+    color: var(--dark);
+}
+section{
+    padding: 50px 0;
+}
+=================================
+    /*Header Top  Css Start*/
+=================================
+.header-top {
+    background-color: #0b0b0b;
+    color: var(--white);
+    padding: 10px 0;
+}
+
+.header-top i.fa {
+    color: #fc721e;
+    padding-right: 7px;
+}
+.header_address {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.header_top {
+    background: #e9edf0;
+}
+
+.header_address i {
+    color: #ff5200;
+    margin-right: 10px;
+}
+.right_items a {
+    margin-right: 11px;
+}
+.right_items a:last-child{
+    margin-right: 0;
+}
+
+=================================
+    /*Header Top  Css End*/
+=================================
+=================================
+    /*Header ADDRESS SECTION START*/
+=================================
+.single_address {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.single_address {
+    width: 100%;
+    height: 100%;
+}
+.right_account_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.right_account_section p {
+    font-size: 15px;
+    display: flex;
+    margin-bottom: 0;
+    transition: .3s;
+    padding: 10px;
+    color: #ff5200;
+    font-weight: bold;
+    cursor: pointer;
+}
+.right_account_section p:hover {
+    box-shadow: rgb(255, 82, 0) 0px 3px 12px;
+}
+.input_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.input_box input {
+    width: 100%;
+    border-radius: 10px;
+    height: 48px;
+}
+.input_box i {
+    position: absolute;
+    left: 92%;
+    font-size: 21px;
+    color: #ff5200;
+}
+.right_account_section i {
+    font-size: 15px;
+    display: flex;
+    margin-bottom: 0;
+    transition: .3s;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.right_account_section i:hover {
+    box-shadow: rgb(255, 82, 0) 0px 3px 12px;
+}
+section.header_address_section {
+    padding: 10px;
+}
+=================================
+    /*Header ADDRESS SECTION  End*/
+=================================
+=================================
+    /*MENU  START*/
+=================================
+header {
+    padding: 10px 0px;
+    width: 100%;
+}
+
+header .is-sticky .sticky-area {
+    background: #0c1923;
+    box-shadow: 0 3px 16px -2px #4c4a4ade;
+    z-index: 999 !important;
+    -webkit-animation: slideInDown .6s forwards;
+    animation: slideInDown .6s forwards;
+    margin-top: 0;
+    padding: 15px 0;
+}
+header .is-sticky .sticky-area .factory-text a{
+    color:#fff;
+}
+header .is-sticky .sticky-area .factory-text{
+     border: 1px solid var(--white);
+}
+.factory-text {
+    display: inline-block;
+    border: 1px solid var(--white);
+    padding: 6px;
+}
+
+.factory-text h4 {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.factory-text a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.factory-logo {
+    margin: 15px 0;
+}
+
+@media only screen and (min-width:768px) {
+    .main-menu li {
+        display: inline-block;
+        position: relative;
+    }
+    header .is-sticky .sticky-area .main-menu li a{
+         color: #fff;
+    }
+    .main-menu li a {
+        color: #fff;
+        font-size: 13px;
+        display: block;
+        font-weight: 600;
+        padding: 0px 12px;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .main-menu li:last-child a {
+        padding-right: 0px;
+    }
+
+    .main-menu>li:hover>a,
+    .sub_menu>li:hover>a,
+    .main-menu li.active a {
+        background: #ff5200;
+        color: black;
+    }
+
+    ul.sub_menu {
+        background: #181A18;
+        border-top: 2px solid #fc721e;
+        opacity: 0;
+        position: absolute;
+        text-align: left;
+        top: 42px;
+        transform: rotateY(37deg) scale(1, 0.7);
+        visibility: hidden;
+        width: 183px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        z-index: 2;
+        transition: .3s;
+    }
+    header .is-sticky .sticky-area  ul.sub_menu{
+          background: #0c1923;;
+    }
+
+    .sub_menu li {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        display: block;
+    }
+
+    .sub_menu>li>a {
+        display: block;
+        line-height: normal;
+        margin: 0;
+        padding: 14px 25px;
+        font-size: 13px;
+    }
+
+    .sub_menu>li>a::before {
+        content: "\eb88";
+        font-family: icofont;
+        left: 0;
+        line-height: 44px;
+        opacity: 0;
+        padding-left: 5px;
+        position: absolute;
+        top: -1px;
+        visibility: hidden;
+    }
+
+    .sub_menu a:hover:before {
+        left: 5px;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .main-menu>li:hover ul.sub_menu {
+        opacity: 1;
+        transform: rotate(0deg);
+        visibility: visible;
+    }
+
+    .main-menu li a,
+    ul.sub_menu,
+    .sub_menu>li>a::before {
+        -webkit-transition-duration: .5s;
+        -moz-transition-duration: .5s;
+        -o-transition-duration: .5s;
+        transition-duration: .5s;
+    }
+    li{
+            font-family: font-family: 'Oswald', sans-serif;
+
+    }
+
+}
+header#navbar {
+    background: #181A18;
+}
+=================================
+    /*MENU  End*/
+=================================
+=================================
+    /*SLIDER-SECTION  START*/
+=================================
+/*.carousel-caption p {
+    position: relative;
+    color: #ffffff;
+    font-weight: 500;
+    opacity: 0;
+    margin-bottom: 10px;
+    transition: all 1400ms ease;
+    transform: translateY(100px);
+}
+.carousel-item .active p {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 1400ms;
+}
+.single-slide-item .content {
+    position: relative;
+    color: #ffffff;
+    font-size: 42px;
+    line-height: 1.0em;
+    font-weight: 500;
+    opacity: 0;
+    margin-bottom: 10px;
+    transition: all 1000ms ease;
+    transform: translateY(80px);
+}
+.active .single-slide-item .content h2 {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 1000ms;
+}
+.single-slide-item .content .boxed-btn,
+.bordered-btn {
+    position: relative;
+    opacity: 0;
+    transition: all 1600ms ease;
+    transform: translateY(120px);
+}
+.active .single-slide-item .content .boxed-btn,
+.bordered-btn {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 1600ms;
+}*/
+=================================
+    /*SLIDER-SECTION  END*/
+=================================
+=================================
+    /*SELL SECTION  START*/
+=================================
+.single-sell-item{
+    text-align: center;
+    position: relative;
+}
+.single-sell-item{
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 57px;
+    width: 100%;
+    height: 100%;
+}
+.single-sell-item h4 {
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+.single-sell-item span {
+    font-weight: 600;
+    font-size: 17px;
+    text-decoration: line-through;
+}
+
+.single-sell-item p {
+    font-size: 20px;
+    margin-top: -6px;
+    font-weight: bolder;
+}
+
+.single-sell-item .icon i {
+    background: white;
+    margin-right: 8px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 50px;
+    transition: .6s;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(60px); 
+}
+.single-sell-item .icon i:hover {
+    background: black;
+    color: white;
+    transform: scale(1.1);
+}
+.single-sell-item:hover .icon i {
+     opacity: 1; 
+     visibility: visible; 
+     transform: translatey(20px);
+
+}
+.single-sell-item:hover{
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.single-sell-item:hover .imgwrapper {
+    transform: scale(1.1);
+}
+.single-sell-item .imgwrapper {
+    transition: .3s;
+}
+=================================
+    /*SELL SECTION  END*/
+=================================
+=================================
+    /*CAROUSEL SECTION  START*/
+=================================
+span {
+    display: flex;
+    font-size: 12px;
+}
+h2{
+    font-weight: 700;
+}
+h3 {
+    font-size: 22px;
+    font-family: cursive;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 12px;
+}
+.single-box-info {
+    text-align: center;
+}
+.single-box-info h5 {
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 700;
+}
+p {
+    font-weight: 600;
+    color: cadetblue;
+}
+.heading-border {
+    width: 24%;
+    height: 5px;
+    background: black;
+    border-radius: 56px;
+    position: relative;
+}
+
+.heading-border:after {
+    position: absolute;
+    width: 27%;
+    background: #ff5200;
+    content: "";
+    height: 5px;
+    right: 0;
+    border-radius: 50px;
+}
+.owl-carousel .owl-item img {
+    width: 200px;
+    height: 200px;
+}
+.single-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.single-box .icon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.single-box .icon i {
+    width: 40px;
+    height: 40px;
+    line-height: 100px;
+    background: black;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-top: -3px;
+    color: #ff5200;
+}
+.single-box h5 {
+    color: #ff5200;
+}
+.single-box p {
+    margin: 7px;
+    color: black;
+}
+section.single_box_carousel_section {
+    position: relative;
+}
+section.single_box_carousel_section .owl-nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 27px;
+    bottom: 50%;
+}
+=================================
+    /*CAROUSEL SECTION  END*/
+=================================
+=================================
+    /*BANNER SECTION  END*/
+=================================
+section.banner-section {
+    position: relative;
+}
+section.banner-section {
+    position: relative;
+}
+section.banner-section  .banner-content {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    line-height: 20px;
+}
+.search-box {
+    display: flex;
+    width: 32%;
+}
+.banner-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.banner-content p {
+    background: #ff5200;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 8px;
+    font-weight: 700;
+    justify-content: space-around;
+    font-size: 23px;
+}
+.search-box input {
+    display: block;
+    width: 100%;
+}
+.banner-section .imgwrapper{
+    display: flex;
+    justify-content: center;
+}
+=================================
+    /*BANNER SECTION  END*/
+=================================
+=================================
+    /*DISCOUNT SECTION  END*/
+=================================
+.single-discount {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.single-discount {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.discount-content {
+    position: absolute;
+    width: 93%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+.discount-content.right {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+=================================
+    /*DISCOUNT SECTION  END*/
+=================================
+=================================
+    /*ORDER SECTION  END*/
+=================================
+.single-order {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.single-order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.single-order  h4{
+    font-weight: 700;
+}
+.single-order .icon {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: white;
+    border-radius: 100px;
+    font-size: 18px;
+    font-weight: 700;
+}
+=================================
+    /*ORDER SECTION  END*/
+=================================
+=================================
+    /*LOGO SECTION  START*/
+=================================
+.logo-portfolio {
+    padding: 50px 0;
+    background: #f7f7f7;
+}
+.logo {
+    padding: 30px 0;
+}
+.logo-portfolio .owl-carousel .owl-item img {
+    width: 160px;
+    height: 60px;
+}
+.logo-portfolio {
+    content: "";
+    //: :before;
+    and: :after both require content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(120deg, #eaee44, #33d0ff);
+    opacity: .4;
+    background: lightcyan;
+}
+.logo-section{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.single-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 18px;
+}
+.logo-section .owl-nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 27px;
+    bottom: 38%;
+}
+=================================
+    /*LOGO SECTION  END*/
+=================================
+
+/* ------------------------------------------------
+    ***BANNER-SECTION Css START***
+------------------------------------------------- */
+
+/* ------------------------------------------------
+    ***BANNER-SECTION Css END***
+------------------------------------------------- */
+/* ------------------------------------------------
+    ***SUPPORT-SECTION Css Start***
+------------------------------------------------- */
+
+/* ------------------------------------------------
+    ***SUPPORT-SECTION Css END***
+------------------------------------------------- */
+/* ------------------------------------------------
+    ***CARD--SECTION Css Start***
+------------------------------------------------- */
+/* ------------------------------------------------
+    ***CARD-SECTION Css END***
+------------------------------------------------- */
+/* ------------------------------------------------
+    ***LOGIN-SECTION Css END***
+------------------------------------------------- */
+/* ------------------------------------------------
+    ***CARD-SECTION Css END***
+------------------------------------------------- */
+/* ------------------------------------------------
+    ***CARD-SECTION Css END***
+------------------------------------------------- */
+/* ------------------------------------------------
+    ***CARD-SECTION Css END***
+------------------------------------------------- */
+/* ------------------------------------------------
+    ***CARD-SECTION Css END***
+------------------------------------------------- */
+/* ------------------------------------------------
+    ***CARD-SECTION Css END***
+------------------------------------------------- */
+/* ------------------------------------------------
+    ***CARD-SECTION Css END***
+------------------------------------------------- */
+/* ------------------------------------------------
+    ***CARD-SECTION Css END***
+------------------------------------------------- */
+li{
+        font-family: font-family: 'Oswald', sans-serif;
+}
+/* Preloader */
+#preloader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background-color: #ffff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("../img/preload.gif");
+    opacity: 3;
+}
+
+button.scroll-top {
+    position: fixed;
+    left: 86%;
+    bottom: 28px;
+    z-index: 6;
+    color: #ff5200;
+    cursor: pointer;
+    width: 4%;
+    border-radius: 9px;
+    height: 47px;
+    border: none;
+    font-weight: bold;
+    background: black;
+    font-size: 25px;
+    transition: .9s;
+}
+button.scroll-top:hover {
+    background: #ff5200;
+    color: black;
+}
+.logo-section .img-fluid, .img-thumbnail{
+    max-width: 59%;
+}
+/* End Footer Home pages */
+/* Grow */

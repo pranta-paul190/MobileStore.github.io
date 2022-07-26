@@ -1,0 +1,141 @@
+/*******************************
+	All Responsive Code
+*******************************/
+@media (max-width: 575.98px) {
+     .logo-portfolio{
+        text-align: center;
+     }
+	
+}
+@media only screen and (max-width: 787px){
+	
+}
+@media only screen and (max-width: 768px){
+		section{
+		padding: 50px 0;
+	   }
+	   .header_address{
+		   display: block;
+	   }
+       .single-order p{
+        width: 70%;
+      }
+      .single_address {
+    margin-top: 16px;
+}
+.company_logo {
+    text-align: center;
+}
+.right_account_section {
+    margin-bottom: 20px;
+}
+.header_address{
+    text-align: center;
+}
+}
+@media only screen and (max-width: 421px){
+	
+}
+@media only screen and (max-width: 787.98px) {
+
+    header,
+    header .container {
+        padding: 0;
+    }
+
+    header .is-sticky .sticky-area {
+        background: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .factory-text {
+        width: 100%;
+        border: 0;
+        padding: 0;
+    }
+
+    .factory-text h4 {
+        position: absolute;
+        z-index: 999999;
+        left: 15%;
+        transform: translateY(19px);
+    }
+
+    .factory-text a {
+        color: var(--white);
+    }
+	
+}
+@media only screen and (min-width: 767px) {
+    .single-hoodies .image-layer {
+        transform: translate(67px, -7px);
+        transition: .3s;
+     }
+     .single-hoodies .content-border{
+        height: 78%;
+     }
+     .single-hoodies:hover .image-layer{
+        transform: scale(1.1) translate(67px, -7px);
+    }
+}
+   
+@media only screen and (max-width: 992px) {
+	
+   
+}
+@media only screen and (min-width: 1024px) {
+	.slider-title {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: start;
+    align-items: flex-start;
+}
+#demo .slider-title {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: baseline;
+    justify-content: center;
+}
+.slider-title h4 {
+    width: 33%;
+    line-height: 36px;
+}
+	
+}
+@media only screen and (min-width:768px) and (max-width: 768px) {
+	header .container {
+	
+
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .wow {
+        /*CSS transitions*/
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+        /*CSS transforms*/
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+        /*CSS animations*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
+}
